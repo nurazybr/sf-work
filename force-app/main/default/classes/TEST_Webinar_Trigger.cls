@@ -6,7 +6,7 @@ public with sharing class TEST_Webinar_Trigger {
 
     @IsTest
     private static void testWebinarLessThan(){
-        Webinar__c testWebinarLess = TEST_Data_Factory.createTestWebinar(true);
+        Webinar__c testWebinarLess = TEST_Data_Factory.createTestWebinarCount(true);
         System.assert(testWebinarLess != null);
         Test.startTest();
         Database.SaveResult result = Database.insert(testWebinarLess, false);
@@ -19,7 +19,7 @@ public with sharing class TEST_Webinar_Trigger {
 
     @IsTest
     private static void testWebinarMoreThan(){
-        Webinar__c testWebinarLess = TEST_Data_Factory.createTestWebinar(false);
+        Webinar__c testWebinarLess = TEST_Data_Factory.createTestWebinarCount(false);
         System.assert(testWebinarLess != null);
         Test.startTest();
         Database.SaveResult result = Database.insert(testWebinarLess, false);
