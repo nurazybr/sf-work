@@ -1,0 +1,9 @@
+<!--
+ - Created by ynurazkhan on 08.07.2022.
+ -->
+
+<aura:component description="WebinarMemberComponent" implements="flexipage:availableForAllPageTypes" access="global">
+    <div style="background-color: yellowgreen; border-radius: 5px;">
+        <lightning:recordForm objectApiName="Webinar_Team_Member__c" layoutType="FULL" columns="2" onsubmit="continue"/>
+    </div>
+</aura:component>

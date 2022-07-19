@@ -1,0 +1,23 @@
+<!--
+ - Created by ynurazkhan on 11.07.2022.
+ -->
+
+<aura:component description="webinarRegistrationComponent" implements="force:appHostable" access="global" controller="WebinarRegistrationApexController">
+    <aura:attribute type="String" name="Approval_Status" default=""></aura:attribute>
+    <aura:attribute type="String" name="Type" default=""></aura:attribute>
+    <aura:attribute type="Webinar__c[]" name="webinars"></aura:attribute>
+    <aura:attribute type="String[]" name="wHeader" default="['Webinar Name','Type','Status','Approval Status']"></aura:attribute>
+    <lightning:card title="Search for the webinar" class="slds-card">
+        <lightning:input label="Webinar type" value="{!v.Type}"/>
+        <lightning:input label="Approval Status" value="{!v.Approval_Status}"/>
+        <lightning:button label="Search" iconName="utility:search" variant="base" onclick="{!c.handleClick}"/>
+    </lightning:card>
+    <lightning:card title="Webinars" class="slds-card">
+        <lightning:datatable
+                keyField="Id"
+                data="{!v.webinars}"
+                columns="{!v.wHeader}"
+                hideCheckboxColumn="true"
+                onrowaction="{!c.registrationOfUser}"/>
+    </lightning:card>
+</aura:component>

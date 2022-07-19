@@ -1,4 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Package xmlns="http://soap.sforce.com/2006/04/metadata">
+    <types>
+        <members>ChangePasswordController</members>
+        <members>ChangePasswordControllerTest</members>
+        <members>DeactivateAccountIfActive</members>
+        <members>ForgotPasswordController</members>
+        <members>ForgotPasswordControllerTest</members>
+        <members>InsertCaseHandler</members>
+        <members>Merger</members>
+        <members>MyProfilePageController</members>
+        <members>MyProfilePageControllerTest</members>
+        <members>SiteLoginController</members>
+        <members>SiteLoginControllerTest</members>
+        <members>SiteRegisterController</members>
+        <members>SiteRegisterControllerTest</members>
+        <members>TEST_AccountDeletion</members>
+        <members>TEST_Data_Factory</members>
+        <members>TEST_RestrictContact</members>
+        <members>TEST_Webinar_Member_Trigger</members>
+        <members>TEST_Webinar_Trigger</members>
+        <members>WebinarEmailNotificationSchedule</members>
+        <members>WebinarMemberTriggerHandler</members>
+        <members>WebinarNotificationSchedule</members>
+        <members>WebinarRegistrationApexController</members>
+        <members>WebinarTriggerHandlers</members>
+        <members>auraPendingComponent</members>
+        <name>ApexClass</name>
+    </types>
+    <types>
+        <members>AccountDeletion</members>
+        <members>RestrictContactByName</members>
+        <members>WebinarMemberTrigger</members>
+        <members>WebinarTriggers</members>
+        <name>ApexTrigger</name>
+    </types>
     <version>55.0</version>
 </Package>

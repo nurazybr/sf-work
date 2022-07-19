@@ -1,0 +1,19 @@
+<!--
+ - Created by ynurazkhan on 08.07.2022.
+ -->
+
+<aura:component controller="auraPendingComponent" description="PendingComponent"
+                implements="flexipage:availableForAllPageTypes" access="global">
+
+    <aura:attribute type="Webinar__c[]" name="webinars"></aura:attribute>
+    <aura:attribute type="String[]" name="wHeader" default="['Webinar Name','Type','Status','Approval Status']"></aura:attribute>
+    <aura:handler name="init" value="{!this}" action="{!c.fetchWebinars}"></aura:handler>
+    <lightning:card title="Pending Webinars"  >
+        <lightning:datatable
+                keyField="id"
+                data="{! v.webinars }"
+                columns="{! v.wHeader }"
+                hideCheckboxColumn="true"
+                onrowaction="{!c.approvedWebinar}"/>
+    </lightning:card>
+</aura:component>

@@ -1,0 +1,10 @@
+<!--
+ - Created by ynurazkhan on 08.07.2022.
+ -->
+
+<aura:component description="WebinarComponent" implements="flexipage:availableForAllPageTypes" access="global">
+
+    <lightning:card title="Create a new Webinar">
+        <lightning:recordForm objectApiName="Webinar__c" layoutType="FULL" columns="2" onsubmit="continue"/>
+    </lightning:card>
+</aura:component>

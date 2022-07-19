@@ -1,0 +1,7 @@
+<!--
+ - Created by ynurazkhan on 11.07.2022.
+ -->
+
+<aura:event type="APPLICATION" description="WebinarRegistration">
+    <aura:attribute name="webinarName" type="String"/>
+</aura:event>
