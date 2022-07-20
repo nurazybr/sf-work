@@ -4,8 +4,8 @@
     <option name="allowRunningInParallel" value="false" />
     <option name="apexLogLevel" value="DEBUG" />
     <option name="calloutsLogLevel" value="INFO" />
-    <option name="connectionName" value="SfdxConnection" />
-    <option name="connectionType" value="OAUTH" />
+    <option name="connectionName" value="TetstMJ" />
+    <option name="connectionType" value="SFDX" />
     <option name="contextConfiguration" value="false" />
     <option name="databaseLogLevel" value="INFO" />
     <option name="logLevelsInitialized" value="true" />

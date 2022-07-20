@@ -4,10 +4,10 @@
     <option name="connections">
       <list>
         <IlluminatedCloudConnection>
-          <option name="connectionName" value="SfdxConnection" />
-          <option name="connectionType" value="OAUTH" />
+          <option name="connectionName" value="TetstMJ" />
+          <option name="connectionType" value="SFDX" />
           <option name="defaultModuleName" value="NewSfdx" />
-          <option name="offlineSymbolTablePath" value="$PROJECT_DIR$/IlluminatedCloud/SfdxConnection/OfflineSymbolTable.zip" />
+          <option name="offlineSymbolTablePath" value="$PROJECT_DIR$/IlluminatedCloud/TetstMJ/OfflineSymbolTable.zip" />
         </IlluminatedCloudConnection>
       </list>
     </option>
